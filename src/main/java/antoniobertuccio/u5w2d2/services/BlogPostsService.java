@@ -1,7 +1,6 @@
 package antoniobertuccio.u5w2d2.services;
 
 import antoniobertuccio.u5w2d2.exceptions.NotFoundException;
-import antoniobertuccio.u5w2d2.models.Author;
 import antoniobertuccio.u5w2d2.models.BlogPost;
 import lombok.Getter;
 import org.springframework.stereotype.Service;

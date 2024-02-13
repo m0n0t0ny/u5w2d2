@@ -10,10 +10,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/authors")
 public class AuthorsController {
-//  @GetMapping
-//  public String authors() {
-//    return "You're accessing the 'authors' endpoint.\n📖 Browse it using:\n- GET requests = /testGet\n- POST requests = /testPost\n- PUT requests = /testPut\n- DELETE requests = /testDelete";
-//  }
 
   @Autowired
   private AuthorsService authorsService;
