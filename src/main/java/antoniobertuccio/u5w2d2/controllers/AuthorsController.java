@@ -32,14 +32,14 @@ public class AuthorsController {
   public Author findById(@PathVariable int id) {
     return this.authorsService.findById(id);
   }
-//
-//  @PutMapping("/{id}")
-//  public BlogPost findByIdAndUpdate(@PathVariable int id, @RequestBody BlogPost updateBlogPost) {
-//    return this.authorsService.findByIdAndUpdate(id, updateBlogPost);
-//  }
 
-//  @DeleteMapping("/{id}")
-//  public void deleteUser(@PathVariable int id) {
-//    this.usersService.deleteUser(id);
-//  }
+  @PutMapping("/{id}")
+  public Author findByIdAndUpdate(@PathVariable int id, @RequestBody Author updateAuthor) {
+    return this.authorsService.findByIdAndUpdate(id, updateAuthor);
+  }
+
+  @DeleteMapping("/{id}")
+  public void deleteAuthor(@PathVariable int id) {
+    this.authorsService.deleteAuthor(id);
+  }
 }
